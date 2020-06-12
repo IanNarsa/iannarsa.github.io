@@ -20,7 +20,7 @@ Salah satu penyebab yang mempengaruhi harga emas adalah kondisi global, pada kas
 
 Pada 17 Maret 2020 terdapat total 134 kasus yang terkonfirmasi dan pemerintah mulai menerapkan aturan PSBB disejumlah wilayah, hingga pada 11 Juni 2020 total kasus positif corona meyentuh angka 34.416.
 
-Apa hubungannya pandemi dengan melonjaknya harga emas?
+##Apa hubungannya pandemi dengan melonjaknya harga emas?
 
 Meningkatnya kasus positif COVID 19 di seluruh dunia dan khususnya di Indonesia membuat pemerintah menerepakan kebijakan guna menanggulangi dampak dari COVID 19 ini, pemerintah mengajak masyarakat luas untuk di rumah saja termasuk bekerja dari rumah gerakan ini dimasyarakat dikenal dengan gerakan #dirumahsaja.
 
