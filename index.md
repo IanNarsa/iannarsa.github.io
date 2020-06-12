@@ -48,4 +48,4 @@ Dari data sebelumnya kita coba untuk memprediksi harga 10 hari kemudian dengan m
 
 Ada pergerakan yang dinamis pada harga emas 1 gram jika dilihat harganya cenderung menurun hal ini disebabkan salah satunya adalah prediksi mengenai penemuan vaksin COVID 19 semakin dekat.
 
-Untuk program prediksi ini dapat dilihat [disini]()
+Untuk program prediksi ini dapat dilihat [disini](https://github.com/IanNarsa/iannarsa.github.io/blob/master/gold%20predict.ipynb)
