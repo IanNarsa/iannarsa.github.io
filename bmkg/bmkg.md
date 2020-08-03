@@ -201,7 +201,7 @@ Selain itu kita juga akan menambah kolom "Area" yang berisi informasi dimana gem
 Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di bawah ini. Di sini terdapat 5 kolom yaitu Date yang berisi tanggal tweet dipublish, Time yang berisi waktu tweet dipublish, Timezone, zona waktu untuk Time, Magnitudo dan Area
 
 
-<table class="dataframe" style="width:70px">
+<table class="dataframe" style="width:60px">
   <thead>
     <tr style="text-align: right;">
       <th></th>
