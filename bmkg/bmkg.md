@@ -7,8 +7,7 @@ Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load)
 &nbsp;
 &nbsp;
 
-
-<table class="dataframe">
+<table class="dataframe"; style="width:100px>
   <thead>
     <tr style="text-align: right;">
       <th></th>
