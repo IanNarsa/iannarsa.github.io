@@ -271,7 +271,7 @@ Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di b
 
 
 
-<table border="1" class="dataframe">
+<table  class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
