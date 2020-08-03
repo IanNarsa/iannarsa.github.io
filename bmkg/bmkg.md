@@ -684,3 +684,9 @@ Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kek
 
 &nbsp;
 Untuk code program dapat dilihat [disini](https://github.com/IanNarsa/iannarsa.github.io/blob/master/bmkg/bmkg.ipynb)
+
+&nbsp;
+&nbsp;
+Previous Article : 
+[#dirumahsaja emas naik](./)
+---------------------------------->
