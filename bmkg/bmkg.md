@@ -1,4 +1,4 @@
-﻿# Analisis #Gempa @infoBMKG
+﻿# **Analisis #Gempa @infoBMKG**
 &nbsp;
 
 Pada studi kasus ini kita akan menganalisa mengenai Gempa yang terjadi dari awal tahun 2018 sampai bulan 27 Juli 2020. Data ini bersumber dari akun twitter @infoBMKG yang diambil dengan kata kunci #Gempa. Tujuan dari analisa ini adalah agar dapat dimanfaatkannya limpahan Big Data yang bersumber dari twitter dengan fokus topik mengenai gempa. Dengan kita mengetahui wilayah mana saja yang pernah terjadi gempa, kita dapat melakukan mitigasi bencana pada wilayah - wilayah tersebut. 
