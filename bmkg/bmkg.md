@@ -682,3 +682,5 @@ Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kek
             '266 km Tenggara BOVENDIGOEL-PAPUA, Kedlmn:96 Km ']], dtype=object)
 
 
+&nbsp;
+Untuk code program dapat dilihat [disini](https://github.com/IanNarsa/iannarsa.github.io/blob/master/bmkg/bmkg.ipynb)
