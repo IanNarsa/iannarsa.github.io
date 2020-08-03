@@ -46,7 +46,7 @@ Selain itu kita juga akan menambah kolom "Area" yang berisi informasi dimana gem
 Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di bawah ini. Di sini terdapat 5 kolom yaitu Date yang berisi tanggal tweet dipublish, Time yang berisi waktu tweet dipublish, Timezone, zona waktu untuk Time, Magnitudo dan Area
 
 
-<table class="dataframe" style="width:60px" height=80>
+<table class="dataframe" width:60px height=80>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -108,7 +108,7 @@ Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di b
 
 
 
-<table class="dataframe" style="width:70px" height=80>
+<table class="dataframe" width:70px height=80>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -184,7 +184,7 @@ Dari keseluruhan data didapat rata - rata, median dan modulus sebesar :
 Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kekuatan 7 skala richter ke atas. Jika dilihat tempat yang pernah dilanda gempa 7 skala richter ke atas rata - rata terjadi pada wilayah Indonesia bagian Timur, tapi bukan berarti wilayah lain aman dari bencana gempa bumi.
 
 <br> 
-<table class="dataframe" style="width:70px" height=80>
+<table class="dataframe" width:70px height=80>
   <thead>
     <tr style="text-align: right;">
       <th></th>
