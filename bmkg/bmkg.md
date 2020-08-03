@@ -2,6 +2,7 @@
 &nbsp;
 
 Pada studi kasus ini kita akan menganalisa mengenai Gempa yang terjadi dari awal tahun 2018 sampai bulan 27 Juli 2020. Data ini bersumber dari akun twitter @infoBMKG yang diambil dengan kata kunci #Gempa. Tujuan dari analisa ini adalah agar dapat dimanfaatkannya limpahan Big Data yang bersumber dari twitter dengan fokus topik mengenai gempa. Dengan kita mengetahui wilayah mana saja yang pernah terjadi gempa, kita dapat melakukan mitigasi bencana pada wilayah - wilayah tersebut. 
+<br>
 Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load), ekstrasi data dari twitter kemudian ditransform menjadi format baru sesuai keutuhan lalu disimpan dalam variabel yang telah ditentukan. File disimpan dalam format .csv kemudian dibaca dengan pandas agar dapat ditampilkan dalam bentuk dataframe. File tersebut berisi hasil scraping data dari akun twitter @infoBMKG.
 &nbsp;
 &nbsp;
@@ -339,7 +340,7 @@ Dari keseluruhan data didapat rata - rata, median dan modulus sebesar :
     dtype   : float64
 
 
-Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kekuatan 7 skala richter ke atas. Jika dilihat tempat yang pernah terjadi rata - rata pada wilayah Indonesia bagian Timur.
+Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kekuatan 7 skala richter ke atas. Jika dilihat tempat yang pernah dilanda gempa 7 skala richter ke atas rata - rata terjadi pada wilayah Indonesia bagian Timur, tapi bukan berarti wilayah lain aman dari bencana gempa bumi.
 
 <br>
 <table class="dataframe">
