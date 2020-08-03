@@ -212,4 +212,4 @@ Untuk code program dapat dilihat [disini](https://github.com/IanNarsa/iannarsa.g
 &nbsp;
 Previous Article :
 &nbsp;
-[#dirumahsaja emas naik](././)
+[#dirumahsaja emas naik](/)
