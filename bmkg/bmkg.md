@@ -7,7 +7,7 @@ Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load)
 &nbsp;
 &nbsp;
 
-<table style="width:80px; border: 1px solid black">
+<table style="width:70px; border: 1px solid black">
 <table class="dataframe" style="width:100px">
   <thead>
     <tr style="text-align: right;">
@@ -194,8 +194,8 @@ Setelah data dapat diekstrak atau dibuka, data yang ada ditransform sesuai denga
 Data teks dari kolom tweet kita ambil untuk kita pilah kembali untuk menemukan tweet yang berkaitan dengan pemberitaan gempa bumi yang terjadi, karena belum tentu tweet yang mengandung #Gempa itu memberitakan bencana gempa bisa saja memberitakan informasi tentang apa itu gempa? atau klarifikasi berita gempa. Dalam proses ini kita mencari kalimat "#Gempa Mag:" apabila ada kalimat tersebut maka tweet tersebut memberitakan gempa bumi yang terjadi.
 <br>
 <br>
-Selain itu kita juga akan menambah kolom "Area" yang berisi informasi dimana gempa terjadi.
-
+Selain itu kita juga akan menambah kolom "Area" yang berisi informasi dimana gempa terjadi. 
+<br>
 
 ## Visualisasi dan Analisa
 
@@ -256,7 +256,6 @@ Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di b
     </tr>
   </tbody>
 </table>
-</div>
 
 
 
@@ -299,7 +298,6 @@ Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di b
     </tr>
   </tbody>
 </table>
-</div>
 
 
 
@@ -612,7 +610,6 @@ Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kek
     </tr>
   </tbody>
 </table>
-</div>
 
 
     array([['2020-07-17', '10:03:04', 'WIB', 7.3,
