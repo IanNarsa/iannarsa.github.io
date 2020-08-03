@@ -3,10 +3,9 @@
 &nbsp;
 &nbsp;
 
-Pada studi kasus ini kita akan menganalisa mengenai Gempa yang terjadi dari awal tahun 2018 sampai bulan 27 Juli 2020. Data ini bersumber dari akun twitter @infoBMKG yang diambil dengan kata kunci #Gempa. Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load), ekstrasi data dari twitter kemudian ditransform menjadi format baru sesuai keutuhan lalu disimpan dalam variabel yang telah ditentukan.
-
-
-File gempaInfo.csv dibaca dengan pandas agar dapat ditampilkan dalam bentuk dataframe. File gempaInfo.csv berisi mengenai informasi gempa yang terjadi di Indonesia, semua data ini dicatat oleh BMKG yang kemudian diposting pada twitter @infoBMKG, data ini diambil dengan rentang waktu 01 Januari 2018 sampai dengan 27 Juli 2020.
+Pada studi kasus ini kita akan menganalisa mengenai Gempa yang terjadi dari awal tahun 2018 sampai bulan 27 Juli 2020. Data ini bersumber dari akun twitter @infoBMKG yang diambil dengan kata kunci #Gempa. Tujuan dari analisa ini adalah agar dapat dimanfaatkannya limpahan Big Data yang bersumber dari twitter dengan fokus topik mengenai gempa. Dengan kita mengetahui wilayah mana saja yang pernah terjadi gempa, kita dapat melakukan mitigasi bencana pada wilayah - wilayah tersebut. 
+Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load), ekstrasi data dari twitter kemudian ditransform menjadi format baru sesuai keutuhan lalu disimpan dalam variabel yang telah ditentukan. File disimpan dalam format .csv kemudian dibaca dengan pandas agar dapat ditampilkan dalam bentuk dataframe. File tersebut berisi hasil scraping data dari akun twitter @infoBMKG.
+<br>
 
 
 <table border="1" class="dataframe">
@@ -164,7 +163,7 @@ File gempaInfo.csv dibaca dengan pandas agar dapat ditampilkan dalam bentuk data
 
 
 
-Dari data frame di atas kita dapat melihat nama-nama kolom dengan perintah ```python df.columns ``` .
+Detail kolom dari data frame di atas dapat dilihat di bawah ini. 
 
 
     Index(['id', 'conversation_id', 'created_at', 'date', 'time', 'timezone',
@@ -204,32 +203,11 @@ Data teks dari kolom tweet kita ambil untuk kita pilah kembali untuk menemukan t
 Selain itu kita juga akan menambah kolom "Area" yang berisi informasi dimana gempa terjadi.
 
 
-    dict_keys(['Date', 'Time', 'Timezone', 'Tweet'])
-
-
-
 ## Visualisasi dan Analisa
 
-Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di bawah ini. Di sini terdapat 5 kolom yaitu Date, Time, Timezone, Magnitudo dan Area
+Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di bawah ini. Di sini terdapat 5 kolom yaitu Date yang berisi tanggal tweet dipublish, Time yang berisi waktu tweet dipublish, Timezone, zona waktu untuk Time, Magnitudo dan Area
 
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -293,20 +271,6 @@ Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di b
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -382,20 +346,6 @@ Di bawah merupakan grafik garis frekuensi tweet setiap harinya selama periode Ja
 Mencari gempa dengan magnitudo si atas 7 skala richter dengan menseleksi data frame pada kolom Magnitudo
 
 <br>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
