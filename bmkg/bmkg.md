@@ -1,14 +1,14 @@
 ﻿
-# Anlisis #Gempa @infoBMKG
-&nbsp;
+# Analisis #Gempa @infoBMKG
 &nbsp;
 
 Pada studi kasus ini kita akan menganalisa mengenai Gempa yang terjadi dari awal tahun 2018 sampai bulan 27 Juli 2020. Data ini bersumber dari akun twitter @infoBMKG yang diambil dengan kata kunci #Gempa. Tujuan dari analisa ini adalah agar dapat dimanfaatkannya limpahan Big Data yang bersumber dari twitter dengan fokus topik mengenai gempa. Dengan kita mengetahui wilayah mana saja yang pernah terjadi gempa, kita dapat melakukan mitigasi bencana pada wilayah - wilayah tersebut. 
 Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load), ekstrasi data dari twitter kemudian ditransform menjadi format baru sesuai keutuhan lalu disimpan dalam variabel yang telah ditentukan. File disimpan dalam format .csv kemudian dibaca dengan pandas agar dapat ditampilkan dalam bentuk dataframe. File tersebut berisi hasil scraping data dari akun twitter @infoBMKG.
-<br>
+&nbsp;
+&nbsp;
 
 
-<table border="1" class="dataframe">
+<table class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -161,6 +161,7 @@ Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load)
 <p>5 rows × 34 columns</p>
 </div>
 
+&nbsp;
 
 
 Detail kolom dari data frame di atas dapat dilihat di bawah ini. 
@@ -181,19 +182,13 @@ Detail kolom dari data frame di atas dapat dilihat di bawah ini.
 Setelah data dapat diekstrak atau dibuka, data yang ada ditransform sesuai dengan kebutuhan analis. Pada tahap ini dipilah lagi tweet yang ada, kita hanya akan mengambil data tanggal pada kolom date, waktu pada kolom time, waktu wilayah pada kolom timezone dan tweet pada kolom tweet, tweet yang diambil hanya tweet yang menginformasikan gempa. Untuk mengetahuinya kita dapat melihat pada tweet apakah ada kalimat '#Gempa Mag:' yang menandakan tweet tersebut menginformasikan kejadian mengenai gempa.
 
 
-             Date      Time Timezone  \
-    0  2020-07-27  08:27:05      WIB   
-    1  2020-07-27  08:25:52      WIB   
-    2  2020-07-27  05:09:05      WIB   
-    3  2020-07-27  05:05:58      WIB   
-    4  2020-07-26  21:39:05      WIB   
-    
-                                                   Tweet  
-    0  #Gempa Mag:5, 27/07/2020 05:01:23 (Pusat gempa...  
-    1  #Gempa Mag:5.0, 27-Jul-20 05:01:23 WIB, Lok:0....  
-    2  #Gempa Mag:5.0, 27-Jul-20 05:01:23 WIB, Lok:0....  
-    3  #Gempa Mag:5.0, 27-Jul-20 05:01:23 WIB, Lok:0....  
-    4  #Gempa Mag:3.2, 26/07/2020 21:18:14 (Pusat gem...  
+             Date      Time Timezone  \                                            Tweet
+    0  2020-07-27  08:27:05      WIB   #Gempa Mag:5, 27/07/2020 05:01:23 (Pusat gempa...
+    1  2020-07-27  08:25:52      WIB   #Gempa Mag:5.0, 27-Jul-20 05:01:23 WIB, Lok:0....
+    2  2020-07-27  05:09:05      WIB   #Gempa Mag:5.0, 27-Jul-20 05:01:23 WIB, Lok:0....
+    3  2020-07-27  05:05:58      WIB   #Gempa Mag:5.0, 27-Jul-20 05:01:23 WIB, Lok:0....
+    4  2020-07-26  21:39:05      WIB   #Gempa Mag:3.2, 26/07/2020 21:18:14 (Pusat gem...
+
     7504
 
 
@@ -208,7 +203,7 @@ Selain itu kita juga akan menambah kolom "Area" yang berisi informasi dimana gem
 Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di bawah ini. Di sini terdapat 5 kolom yaitu Date yang berisi tanggal tweet dipublish, Time yang berisi waktu tweet dipublish, Timezone, zona waktu untuk Time, Magnitudo dan Area
 
 
-<table border="1" class="dataframe">
+<table class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -346,7 +341,7 @@ Di bawah merupakan grafik garis frekuensi tweet setiap harinya selama periode Ja
 Mencari gempa dengan magnitudo si atas 7 skala richter dengan menseleksi data frame pada kolom Magnitudo
 
 <br>
-<table border="1" class="dataframe">
+<table class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
