@@ -7,8 +7,7 @@ Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load)
 &nbsp;
 &nbsp;
 
-<table style="width:70px; border: 1px solid black">
-<table class="dataframe" style="width:100px">
+<table class="dataframe" style="width:70px">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -202,7 +201,7 @@ Selain itu kita juga akan menambah kolom "Area" yang berisi informasi dimana gem
 Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di bawah ini. Di sini terdapat 5 kolom yaitu Date yang berisi tanggal tweet dipublish, Time yang berisi waktu tweet dipublish, Timezone, zona waktu untuk Time, Magnitudo dan Area
 
 
-<table class="dataframe">
+<table class="dataframe" style="width:70px">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -264,7 +263,7 @@ Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di b
 
 
 
-<table class="dataframe">
+<table class="dataframe" style="width:70px">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -339,8 +338,8 @@ Dari keseluruhan data didapat rata - rata, median dan modulus sebesar :
 
 Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kekuatan 7 skala richter ke atas. Jika dilihat tempat yang pernah dilanda gempa 7 skala richter ke atas rata - rata terjadi pada wilayah Indonesia bagian Timur, tapi bukan berarti wilayah lain aman dari bencana gempa bumi.
 
-<br>
-<table class="dataframe">
+<br> 
+<table class="dataframe" style="width:70px">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -611,7 +610,7 @@ Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kek
   </tbody>
 </table>
 
-
+```
     array([['2020-07-17', '10:03:04', 'WIB', 7.3,
             '192 km TimurLaut PORTMORESBY-PNG, Kedalaman:87 Km, tidak berpotensi tsunami '],
            ['2020-07-17', '10:01:18', 'WIB', 7.3,
@@ -676,7 +675,7 @@ Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kek
             '266 km Tenggara BOVENDIGOEL-PAPUA, Kedlmn:96 Km, tdk berpotensi tsunami '],
            ['2018-02-26', '00:51:10', 'WIB', 7.6,
             '266 km Tenggara BOVENDIGOEL-PAPUA, Kedlmn:96 Km ']], dtype=object)
-
+```
 
 &nbsp;
 Untuk code program dapat dilihat [disini](https://github.com/IanNarsa/iannarsa.github.io/blob/master/bmkg/bmkg.ipynb)
