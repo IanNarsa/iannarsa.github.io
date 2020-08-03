@@ -51,5 +51,5 @@ Ada pergerakan yang dinamis pada harga emas 1 gram jika dilihat harganya cenderu
 Untuk program prediksi ini dapat dilihat [disini](https://github.com/IanNarsa/iannarsa.github.io/blob/master/gold%20predict.ipynb)
 
 Next Article : 
-[Analisis Gempa Bersumber Tweet BMKG](https://github.com/IanNarsa/iannarsa.github.io/blob/master/bmkg/bmkg.md)
+[Analisis Gempa Bersumber Tweet BMKG](https://github.com/IanNarsa/iannarsa.github.io/blob/master/bmkg/bmkg.html)
 ---------------------------------->
