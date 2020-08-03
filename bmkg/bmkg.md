@@ -9,28 +9,6 @@ Pada studi kasus ini kita akan menganalisa mengenai Gempa yang terjadi dari awal
 File gempaInfo.csv dibaca dengan pandas agar dapat ditampilkan dalam bentuk dataframe. File gempaInfo.csv berisi mengenai informasi gempa yang terjadi di Indonesia, semua data ini dicatat oleh BMKG yang kemudian diposting pada twitter @infoBMKG, data ini diambil dengan rentang waktu 01 Januari 2018 sampai dengan 27 Juli 2020.
 
 
-```python
-df = pd.read_csv("gempaInfo.csv")
-df.head()
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
