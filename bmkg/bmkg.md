@@ -182,14 +182,14 @@ Detail kolom dari data frame di atas dapat dilihat di bawah ini.
 Setelah data dapat diekstrak atau dibuka, data yang ada ditransform sesuai dengan kebutuhan analis. Pada tahap ini dipilah lagi tweet yang ada, kita hanya akan mengambil data tanggal pada kolom date, waktu pada kolom time, waktu wilayah pada kolom timezone dan tweet pada kolom tweet, tweet yang diambil hanya tweet yang menginformasikan gempa. Untuk mengetahuinya kita dapat melihat pada tweet apakah ada kalimat '#Gempa Mag:' yang menandakan tweet tersebut menginformasikan kejadian mengenai gempa.
 
 
-             Date      Time Timezone  \                                            Tweet
+             Date      Time Timezone                                               Tweet
     0  2020-07-27  08:27:05      WIB   #Gempa Mag:5, 27/07/2020 05:01:23 (Pusat gempa...
     1  2020-07-27  08:25:52      WIB   #Gempa Mag:5.0, 27-Jul-20 05:01:23 WIB, Lok:0....
     2  2020-07-27  05:09:05      WIB   #Gempa Mag:5.0, 27-Jul-20 05:01:23 WIB, Lok:0....
     3  2020-07-27  05:05:58      WIB   #Gempa Mag:5.0, 27-Jul-20 05:01:23 WIB, Lok:0....
     4  2020-07-26  21:39:05      WIB   #Gempa Mag:3.2, 26/07/2020 21:18:14 (Pusat gem...
 
-    7504
+&nbsp;
 
 
 Data teks dari kolom tweet kita ambil untuk kita pilah kembali untuk menemukan tweet yang berkaitan dengan pemberitaan gempa bumi yang terjadi, karena belum tentu tweet yang mengandung #Gempa itu memberitakan bencana gempa bisa saja memberitakan informasi tentang apa itu gempa? atau klarifikasi berita gempa. Dalam proses ini kita mencari kalimat "#Gempa Mag:" apabila ada kalimat tersebut maka tweet tersebut memberitakan gempa bumi yang terjadi.
