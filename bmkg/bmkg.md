@@ -336,7 +336,7 @@ Dari keseluruhan data didapat rata - rata, median dan modulus sebesar :
 
     mean    : 4.323960554370998
     median  : 4.5
-    mode 	  : 5.0
+    mode    : 5.0
     dtype   : float64
 
 
