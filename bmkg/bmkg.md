@@ -46,105 +46,24 @@ Selain itu kita juga akan menambah kolom "Area" yang berisi informasi dimana gem
 Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di bawah ini. Di sini terdapat 5 kolom yaitu Date yang berisi tanggal tweet dipublish, Time yang berisi waktu tweet dipublish, Timezone, zona waktu untuk Time, Magnitudo dan Area
 
 
-<table class="dataframe" width:60px height=80>
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Date</th>
-      <th>Time</th>
-      <th>Timezone</th>
-      <th>Magnitudo</th>
-      <th>Area</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2020-07-27</td>
-      <td>08:27:05</td>
-      <td>WIB</td>
-      <td>5.0</td>
-      <td>Pusat gempa di laut 89 km Timur Laut Nias Sela...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2020-07-27</td>
-      <td>08:25:52</td>
-      <td>WIB</td>
-      <td>5.0</td>
-      <td>Pusat gempa berada di laut 89 km Timur Laut Ni...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2020-07-27</td>
-      <td>05:09:05</td>
-      <td>WIB</td>
-      <td>5.0</td>
-      <td>89 km TimurLaut NIASSELATAN-SUMUT, Kedalaman:1...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2020-07-27</td>
-      <td>05:05:58</td>
-      <td>WIB</td>
-      <td>5.0</td>
-      <td>89 km TimurLaut NIASSELATAN-SUMUT, Kedlmn:10 K...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2020-07-26</td>
-      <td>21:39:05</td>
-      <td>WIB</td>
-      <td>3.2</td>
-      <td>Pusat gempa di laut 22 km Barat Laut Lembata, ...</td>
-    </tr>
-  </tbody>
-</table>
-
-
+|  | Date | Time | Timezone | Magnitudo | Area |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 2020-07-27 | 08:27:05 | WIB | 5.0 | Pusat gempa di laut 89 km Timur Laut Nias Sela... |
+| 1 | 2020-07-27 | 08:25:52 | WIB | 5.0 | Pusat gempa berada di laut 89 km Timur Laut Ni... |
+| 2 | 2020-07-27 | 05:09:05 | WIB | 5.0 | 89 km TimurLaut NIASSELATAN-SUMUT, Kedalaman:1... |
+| 3 | 2020-07-27 | 05:05:58 | WIB | 5.0 | 89 km TimurLaut NIASSELATAN-SUMUT, Kedlmn:10 K... |
+| 4 | 2020-07-26 | 21:39:05 | WIB | 3.2 | Pusat gempa di laut 22 km Barat Laut Lembata, ... |
 
 
 <br>
 
-
-
-<table class="dataframe" width:70px height=80>
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Total_Tweets</th>
-    </tr>
-    <tr>
-      <th>Date</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2018-01-01</th>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>2018-01-03</th>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2018-01-04</th>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>2018-01-05</th>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>2018-01-06</th>
-      <td>6</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
+| Date | Total_Tweets|
+| --- | --- |
+| 2018-01-01 | 5 |
+| 2018-01-03 | 2 |
+| 2018-01-04 | 6 |
+| 2018-01-05 | 5 |
+| 2018-01-06 | 6 |
 
 <br>
     5 Tweet Tertinggi 
@@ -184,276 +103,40 @@ Dari keseluruhan data didapat rata - rata, median dan modulus sebesar :
 Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kekuatan 7 skala richter ke atas. Jika dilihat tempat yang pernah dilanda gempa 7 skala richter ke atas rata - rata terjadi pada wilayah Indonesia bagian Timur, tapi bukan berarti wilayah lain aman dari bencana gempa bumi.
 
 <br> 
-<table class="dataframe" width:70px height=80>
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Date</th>
-      <th>Time</th>
-      <th>Timezone</th>
-      <th>Magnitudo</th>
-      <th>Area</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>45</th>
-      <td>2020-07-17</td>
-      <td>10:03:04</td>
-      <td>WIB</td>
-      <td>7.3</td>
-      <td>192 km TimurLaut PORTMORESBY-PNG, Kedalaman:87...</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>2020-07-17</td>
-      <td>10:01:18</td>
-      <td>WIB</td>
-      <td>7.3</td>
-      <td>192 km TimurLaut PORTMORESBY-PNG, Kedlmn:87 Km...</td>
-    </tr>
-    <tr>
-      <th>296</th>
-      <td>2020-06-04</td>
-      <td>16:18:05</td>
-      <td>WIB</td>
-      <td>7.1</td>
-      <td>Pusat gempa di laut 89 km BaratLaut Daruba, Ke...</td>
-    </tr>
-    <tr>
-      <th>297</th>
-      <td>2020-06-04</td>
-      <td>15:57:05</td>
-      <td>WIB</td>
-      <td>7.1</td>
-      <td>89 km BaratLaut DARUBA-MALUT, Kedalaman:112 Km...</td>
-    </tr>
-    <tr>
-      <th>298</th>
-      <td>2020-06-04</td>
-      <td>15:54:25</td>
-      <td>WIB</td>
-      <td>7.1</td>
-      <td>89 km BaratLaut DARUBA-MALUT, Kedlmn:112 Km, t...</td>
-    </tr>
-    <tr>
-      <th>442</th>
-      <td>2020-05-06</td>
-      <td>21:00:05</td>
-      <td>WIB</td>
-      <td>7.3</td>
-      <td>180 km BaratLaut MALUKUTENGGARABRT, Kedalaman:...</td>
-    </tr>
-    <tr>
-      <th>443</th>
-      <td>2020-05-06</td>
-      <td>20:59:20</td>
-      <td>WIB</td>
-      <td>7.3</td>
-      <td>180 km BaratLaut MALUKUTENGGARABRT, Kedlmn:133...</td>
-    </tr>
-    <tr>
-      <th>1708</th>
-      <td>2019-11-15</td>
-      <td>00:06:22</td>
-      <td>WIB</td>
-      <td>7.4</td>
-      <td>Pusat gempa berada dilaut 134 BaratLaut Jailol...</td>
-    </tr>
-    <tr>
-      <th>1709</th>
-      <td>2019-11-15</td>
-      <td>00:06:09</td>
-      <td>WIB</td>
-      <td>7.4</td>
-      <td>Pusat gempa dilaut 134 BaratLaut Jailolo, Kedl...</td>
-    </tr>
-    <tr>
-      <th>1710</th>
-      <td>2019-11-14</td>
-      <td>23:36:10</td>
-      <td>WIB</td>
-      <td>7.1</td>
-      <td>137 km BaratLaut JAILOLO-MALUT, Kedalaman:73 K...</td>
-    </tr>
-    <tr>
-      <th>1711</th>
-      <td>2019-11-14</td>
-      <td>23:27:11</td>
-      <td>WIB</td>
-      <td>7.4</td>
-      <td>134 km BaratLaut JAILOLO-MALUT, Kedalaman:10 K...</td>
-    </tr>
-    <tr>
-      <th>2766</th>
-      <td>2019-08-02</td>
-      <td>19:13:42</td>
-      <td>WIB</td>
-      <td>7.4</td>
-      <td>147 km BaratDaya SUMUR-BANTEN, Kedalaman:10 Km...</td>
-    </tr>
-    <tr>
-      <th>2767</th>
-      <td>2019-08-02</td>
-      <td>19:09:30</td>
-      <td>WIB</td>
-      <td>7.4</td>
-      <td>147 km BaratDaya SUMUR-BANTEN, Kedalaman:10 Km...</td>
-    </tr>
-    <tr>
-      <th>2925</th>
-      <td>2019-07-14</td>
-      <td>16:36:12</td>
-      <td>WIB</td>
-      <td>7.2</td>
-      <td>Pusat gempa di darat 62km TimurLaut Labuha, Ke...</td>
-    </tr>
-    <tr>
-      <th>2926</th>
-      <td>2019-07-14</td>
-      <td>16:36:12</td>
-      <td>WIB</td>
-      <td>7.2</td>
-      <td>Pusat gempa berada di darat 62km TimurLaut Lab...</td>
-    </tr>
-    <tr>
-      <th>2929</th>
-      <td>2019-07-14</td>
-      <td>16:18:08</td>
-      <td>WIB</td>
-      <td>7.2</td>
-      <td>62 km TimurLaut LABUHA-MALUT, Kedalaman:10 Km,...</td>
-    </tr>
-    <tr>
-      <th>2930</th>
-      <td>2019-07-14</td>
-      <td>16:15:44</td>
-      <td>WIB</td>
-      <td>7.2</td>
-      <td>62 km TimurLaut LABUHA-MALUT, Kedlmn:10 Km, td...</td>
-    </tr>
-    <tr>
-      <th>2969</th>
-      <td>2019-07-07</td>
-      <td>23:03:19</td>
-      <td>WIB</td>
-      <td>7.1</td>
-      <td>Pusat gempa berada di laut 136 km Barat Daya T...</td>
-    </tr>
-    <tr>
-      <th>2970</th>
-      <td>2019-07-07</td>
-      <td>23:03:08</td>
-      <td>WIB</td>
-      <td>7.1</td>
-      <td>Pusat gempa di laut 136 km Barat Daya Ternate,...</td>
-    </tr>
-    <tr>
-      <th>2971</th>
-      <td>2019-07-07</td>
-      <td>22:24:07</td>
-      <td>WIB</td>
-      <td>7.0</td>
-      <td>133 km BaratDaya TERNATE-MALUT, Kedalaman:36 K...</td>
-    </tr>
-    <tr>
-      <th>2972</th>
-      <td>2019-07-07</td>
-      <td>22:21:10</td>
-      <td>WIB</td>
-      <td>7.1</td>
-      <td>135 km BaratDaya TERNATE-MALUT, Kedalaman:10 K...</td>
-    </tr>
-    <tr>
-      <th>2973</th>
-      <td>2019-07-07</td>
-      <td>22:14:01</td>
-      <td>WIB</td>
-      <td>7.1</td>
-      <td>136 km BaratDaya TERNATE-MALUT, Kedlmn:10 Km, ...</td>
-    </tr>
-    <tr>
-      <th>3068</th>
-      <td>2019-06-24</td>
-      <td>10:00:08</td>
-      <td>WIB</td>
-      <td>7.7</td>
-      <td>245 km TimurLaut MALUKUBRTDAYA, Kedalaman:231 ...</td>
-    </tr>
-    <tr>
-      <th>3069</th>
-      <td>2019-06-24</td>
-      <td>09:58:07</td>
-      <td>WIB</td>
-      <td>7.7</td>
-      <td>245 km TimurLaut MALUKUBRTDAYA, Kedlmn:231 Km,...</td>
-    </tr>
-    <tr>
-      <th>4396</th>
-      <td>2018-12-29</td>
-      <td>12:59:02</td>
-      <td>WIB</td>
-      <td>7.1</td>
-      <td>Pusat gempa berada di laut Mindanao - Philipin...</td>
-    </tr>
-    <tr>
-      <th>5832</th>
-      <td>2018-09-28</td>
-      <td>17:09:11</td>
-      <td>WIB</td>
-      <td>7.7</td>
-      <td>27 km TimurLaut DONGGALA-SULTENG, Kedalaman:10...</td>
-    </tr>
-    <tr>
-      <th>6321</th>
-      <td>2018-08-05</td>
-      <td>19:46:09</td>
-      <td>WIB</td>
-      <td>7.0</td>
-      <td>Pusat gempa di darat 18 km Barat Laut Lombok T...</td>
-    </tr>
-    <tr>
-      <th>6322</th>
-      <td>2018-08-05</td>
-      <td>19:36:10</td>
-      <td>WIB</td>
-      <td>7.0</td>
-      <td>Pusat gempa di darat 18 km Barat Laut Lombok T...</td>
-    </tr>
-    <tr>
-      <th>7279</th>
-      <td>2018-02-26</td>
-      <td>01:31:11</td>
-      <td>WIB</td>
-      <td>7.6</td>
-      <td>Pusat gempa di darat 266 km tenggara Bovendigo...</td>
-    </tr>
-    <tr>
-      <th>7280</th>
-      <td>2018-02-26</td>
-      <td>01:29:42</td>
-      <td>WIB</td>
-      <td>7.6</td>
-      <td>Pusat gempa berada di darat 266 km tenggara Bo...</td>
-    </tr>
-    <tr>
-      <th>7283</th>
-      <td>2018-02-26</td>
-      <td>00:52:11</td>
-      <td>WIB</td>
-      <td>7.6</td>
-      <td>266 km Tenggara BOVENDIGOEL-PAPUA, Kedlmn:96 K...</td>
-    </tr>
-    <tr>
-      <th>7284</th>
-      <td>2018-02-26</td>
-      <td>00:51:10</td>
-      <td>WIB</td>
-      <td>7.6</td>
-      <td>266 km Tenggara BOVENDIGOEL-PAPUA, Kedlmn:96 Km</td>
-    </tr>
-  </tbody>
-</table>
+|  | Date | Time | Timezone | Magnitudo | Area |
+| --- | --- | --- | --- | --- | --- |
+| 45 | 2020-07-17 | 10:03:04 | WIB | 7.3 | 192 km TimurLaut PORTMORESBY-PNG, Kedalaman:87... |
+| 46 | 2020-07-17 | 10:01:18 | WIB | 7.3 | 192 km TimurLaut PORTMORESBY-PNG, Kedlmn:87 Km... |
+| 296 | 2020-06-04 | 16:18:05 | WIB | 7.1 | Pusat gempa di laut 89 km BaratLaut Daruba, Ke... |
+| 297 | 2020-06-04 | 15:57:05 | WIB | 7.1 | 89 km BaratLaut DARUBA-MALUT, Kedalaman:112 Km... |
+| 298 | 2020-06-04 | 15:54:25 | WIB | 7.1 | 89 km BaratLaut DARUBA-MALUT, Kedlmn:112 Km, t... |
+| 442 | 2020-05-06 | 21:00:05 | WIB | 7.3 | 180 km BaratLaut MALUKUTENGGARABRT, Kedalaman:... |
+| 443 | 2020-05-06 | 20:59:20 | WIB | 7.3 | 180 km BaratLaut MALUKUTENGGARABRT, Kedlmn:133... |
+| 1708 | 2019-11-15 | 00:06:22 | WIB | 7.4 | Pusat gempa berada dilaut 134 BaratLaut Jailol... |
+| 1709 | 2019-11-15 | 00:06:09 | WIB | 7.4 | Pusat gempa dilaut 134 BaratLaut Jailolo, Kedl... |
+| 1710 | 2019-11-14 | 23:36:10 | WIB | 7.1 | 137 km BaratLaut JAILOLO-MALUT, Kedalaman:73 K... |
+| 1711 | 2019-11-14 | 23:27:11 | WIB | 7.4 | 134 km BaratLaut JAILOLO-MALUT, Kedalaman:10 K... |
+| 2766 | 2019-08-02 | 19:13:42 | WIB | 7.4 | 147 km BaratDaya SUMUR-BANTEN, Kedalaman:10 Km... |
+| 2767 | 2019-08-02 | 19:09:30 | WIB | 7.4 | 147 km BaratDaya SUMUR-BANTEN, Kedalaman:10 Km... |
+| 2925 | 2019-07-14 | 16:36:12 | WIB | 7.2 | Pusat gempa di darat 62km TimurLaut Labuha, Ke... |
+| 2926 | 2019-07-14 | 16:36:12 | WIB | 7.2 | Pusat gempa berada di darat 62km TimurLaut Lab... |
+| 2929 | 2019-07-14 | 16:18:08 | WIB | 7.2 | 62 km TimurLaut LABUHA-MALUT, Kedalaman:10 Km,... |
+| 2930 | 2019-07-14 | 16:15:44 | WIB | 7.2 | 62 km TimurLaut LABUHA-MALUT, Kedlmn:10 Km, td... |
+| 2969 | 2019-07-07 | 23:03:19 | WIB | 7.1 | Pusat gempa berada di laut 136 km Barat Daya T... |
+| 2970 | 2019-07-07 | 23:03:08 | WIB | 7.1 | Pusat gempa di laut 136 km Barat Daya Ternate,... |
+| 2971 | 2019-07-07 | 22:24:07 | WIB | 7.0 | 133 km BaratDaya TERNATE-MALUT, Kedalaman:36 K... |
+| 2972 | 2019-07-07 | 22:21:10 | WIB | 7.1 | 135 km BaratDaya TERNATE-MALUT, Kedalaman:10 K... |
+| 2973 | 2019-07-07 | 22:14:01 | WIB | 7.1 | 136 km BaratDaya TERNATE-MALUT, Kedlmn:10 Km, ... |
+| 3068 | 2019-06-24 | 10:00:08 | WIB | 7.7 | 245 km TimurLaut MALUKUBRTDAYA, Kedalaman:231 ... |
+| 3069 | 2019-06-24 | 09:58:07 | WIB | 7.7 | 245 km TimurLaut MALUKUBRTDAYA, Kedlmn:231 Km,... |
+| 4396 | 2018-12-29 | 12:59:02 | WIB | 7.1 | Pusat gempa berada di laut Mindanao - Philipin... |
+| 5832 | 2018-09-28 | 17:09:11 | WIB | 7.7 | 27 km TimurLaut DONGGALA-SULTENG, Kedalaman:10... |
+| 6321 | 2018-08-05 | 19:46:09 | WIB | 7.0 | Pusat gempa di darat 18 km Barat Laut Lombok T... |
+| 6322 | 2018-08-05 | 19:36:10 | WIB | 7.0 | Pusat gempa di darat 18 km Barat Laut Lombok T... |
+| 7279 | 2018-02-26 | 01:31:11 | WIB | 7.6 | Pusat gempa di darat 266 km tenggara Bovendigo... |
+| 7280 | 2018-02-26 | 01:29:42 | WIB | 7.6 | Pusat gempa berada di darat 266 km tenggara Bo... |
+| 7283 | 2018-02-26 | 00:52:11 | WIB | 7.6 | 266 km Tenggara BOVENDIGOEL-PAPUA, Kedlmn:96 K... |
+| 7284 | 2018-02-26 | 00:51:10 | WIB | 7.6 | 266 km Tenggara BOVENDIGOEL-PAPUA, Kedlmn:96 Km |
 
 ```
     array([['2020-07-17', '10:03:04', 'WIB', 7.3,
