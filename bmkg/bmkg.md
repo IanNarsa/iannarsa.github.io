@@ -334,10 +334,10 @@ Di bawah merupakan grafik garis frekuensi tweet setiap harinya selama periode Ja
 &nbsp;
 Dari keseluruhan data didapat rata - rata, median dan modulus sebesar :
 
-    mean 	  : 4.323960554370998
-    median 	: 4.5
-    mode 	  : 5.0
-    dtype   : float64
+    mean  &nbsp;: 4.323960554370998
+    median 	&nbsp;: 4.5
+    mode 	  &nbsp;: 5.0
+    dtype   &nbsp;: float64
 
 
 Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kekuatan 7 skala richter ke atas. Jika dilihat tempat yang pernah dilanda gempa 7 skala richter ke atas rata - rata terjadi pada wilayah Indonesia bagian Timur, tapi bukan berarti wilayah lain aman dari bencana gempa bumi.
