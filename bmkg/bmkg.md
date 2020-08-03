@@ -102,7 +102,7 @@ Dari keseluruhan data didapat rata - rata, median dan modulus sebesar :
 
 Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kekuatan 7 skala richter ke atas. Jika dilihat tempat yang pernah dilanda gempa 7 skala richter ke atas rata - rata terjadi pada wilayah Indonesia bagian Timur, tapi bukan berarti wilayah lain aman dari bencana gempa bumi.
  
- 
+
 |  | Date | Time | Timezone | Magnitudo | Area |
 | --- | --- | --- | --- | --- | --- |
 | 45 | 2020-07-17 | 10:03:04 | WIB | 7.3 | 192 km TimurLaut PORTMORESBY-PNG, Kedalaman:87... |
@@ -212,4 +212,4 @@ Untuk code program dapat dilihat [disini](https://github.com/IanNarsa/iannarsa.g
 &nbsp;
 Previous Article :
 &nbsp;
-[#dirumahsaja emas naik](./)
+[#dirumahsaja emas naik](././)
