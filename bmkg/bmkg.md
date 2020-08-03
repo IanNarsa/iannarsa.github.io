@@ -7,7 +7,7 @@ Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load)
 &nbsp;
 &nbsp;
 
-<table style="width:100px; border: 1px solid black">
+<table style="width:80px; border: 1px solid black">
 <table class="dataframe" style="width:100px">
   <thead>
     <tr style="text-align: right;">
@@ -159,7 +159,6 @@ Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load)
   </tbody>
 </table>
 <p>5 rows × 34 columns</p>
-</div>
 
 &nbsp;
 
