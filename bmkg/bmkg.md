@@ -3,164 +3,9 @@
 
 Pada studi kasus ini kita akan menganalisa mengenai Gempa yang terjadi dari awal tahun 2018 sampai bulan 27 Juli 2020. Data ini bersumber dari akun twitter @infoBMKG yang diambil dengan kata kunci #Gempa. Tujuan dari analisa ini adalah agar dapat dimanfaatkannya limpahan Big Data yang bersumber dari twitter dengan fokus topik mengenai gempa. Dengan kita mengetahui wilayah mana saja yang pernah terjadi gempa, kita dapat melakukan mitigasi bencana pada wilayah - wilayah tersebut. 
 <br>
-Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load), ekstrasi data dari twitter kemudian ditransform menjadi format baru sesuai keutuhan lalu disimpan dalam variabel yang telah ditentukan. File disimpan dalam format .csv kemudian dibaca dengan pandas agar dapat ditampilkan dalam bentuk dataframe. File tersebut berisi hasil scraping data dari akun twitter @infoBMKG.
+Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load), ekstrasi data dari twitter kemudian ditransform menjadi format baru sesuai keutuhan lalu disimpan dalam variabel yang telah ditentukan. File disimpan dalam format .csv kemudian kita perlu mengetahui terdapat kolom apa saja, kita cukup melihat nama - nama kolom.
 &nbsp;
 &nbsp;
-
-<table class="dataframe" style="width:70px">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>id</th>
-      <th>conversation_id</th>
-      <th>created_at</th>
-      <th>date</th>
-      <th>time</th>
-      <th>timezone</th>
-      <th>user_id</th>
-      <th>username</th>
-      <th>name</th>
-      <th>place</th>
-      <th>...</th>
-      <th>geo</th>
-      <th>source</th>
-      <th>user_rt_id</th>
-      <th>user_rt</th>
-      <th>retweet_id</th>
-      <th>reply_to</th>
-      <th>retweet_date</th>
-      <th>translate</th>
-      <th>trans_src</th>
-      <th>trans_dest</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1287560105999777793</td>
-      <td>1287560105999777793</td>
-      <td>1595813225000</td>
-      <td>2020-07-27</td>
-      <td>08:27:05</td>
-      <td>WIB</td>
-      <td>108543358</td>
-      <td>infobmkg</td>
-      <td>BMKG</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>[{'user_id': '108543358', 'username': 'infoBMK...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1287559797538136064</td>
-      <td>1287559797538136064</td>
-      <td>1595813152000</td>
-      <td>2020-07-27</td>
-      <td>08:25:52</td>
-      <td>WIB</td>
-      <td>108543358</td>
-      <td>infobmkg</td>
-      <td>BMKG</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>[{'user_id': '108543358', 'username': 'infoBMK...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1287510275810160640</td>
-      <td>1287510275810160640</td>
-      <td>1595801345000</td>
-      <td>2020-07-27</td>
-      <td>05:09:05</td>
-      <td>WIB</td>
-      <td>108543358</td>
-      <td>infobmkg</td>
-      <td>BMKG</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>[{'user_id': '108543358', 'username': 'infoBMK...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1287509492846845952</td>
-      <td>1287509492846845952</td>
-      <td>1595801158000</td>
-      <td>2020-07-27</td>
-      <td>05:05:58</td>
-      <td>WIB</td>
-      <td>108543358</td>
-      <td>infobmkg</td>
-      <td>BMKG</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>[{'user_id': '108543358', 'username': 'infoBMK...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1287397032592842753</td>
-      <td>1287397032592842753</td>
-      <td>1595774345000</td>
-      <td>2020-07-26</td>
-      <td>21:39:05</td>
-      <td>WIB</td>
-      <td>108543358</td>
-      <td>infobmkg</td>
-      <td>BMKG</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>[{'user_id': '108543358', 'username': 'infoBMK...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 34 columns</p>
-
-&nbsp;
-
 
 Detail kolom dari data frame di atas dapat dilihat di bawah ini. 
 
@@ -201,7 +46,7 @@ Selain itu kita juga akan menambah kolom "Area" yang berisi informasi dimana gem
 Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di bawah ini. Di sini terdapat 5 kolom yaitu Date yang berisi tanggal tweet dipublish, Time yang berisi waktu tweet dipublish, Timezone, zona waktu untuk Time, Magnitudo dan Area
 
 
-<table class="dataframe" style="width:60px">
+<table class="dataframe" style="width:60px" height=80>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -263,7 +108,7 @@ Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di b
 
 
 
-<table class="dataframe" style="width:70px">
+<table class="dataframe" style="width:70px" height=80>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -324,7 +169,7 @@ Selama 858 hari BMKG melakukan tweet sebanyak 7504 tweet mengenai #Gempa, jumlah
 Di bawah merupakan grafik garis frekuensi tweet setiap harinya selama periode Januari 2018 sampai 27 Juli 2020
 
 
-![png](output_20_0.png)
+![png](graph.png)
 
 
 &nbsp;
@@ -339,7 +184,7 @@ Dari keseluruhan data didapat rata - rata, median dan modulus sebesar :
 Data yang ditampilkan pada tabel berikut merupakan gempa yang terjadi dengan kekuatan 7 skala richter ke atas. Jika dilihat tempat yang pernah dilanda gempa 7 skala richter ke atas rata - rata terjadi pada wilayah Indonesia bagian Timur, tapi bukan berarti wilayah lain aman dari bencana gempa bumi.
 
 <br> 
-<table class="dataframe" style="width:70px">
+<table class="dataframe" style="width:70px" height=80>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -682,6 +527,6 @@ Untuk code program dapat dilihat [disini](https://github.com/IanNarsa/iannarsa.g
 
 &nbsp;
 &nbsp;
-Previous Article : 
+Previous Article :
+&nbsp;
 [#dirumahsaja emas naik](./)
----------------------------------->

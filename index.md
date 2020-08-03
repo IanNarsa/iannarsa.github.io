@@ -54,4 +54,3 @@ Untuk program prediksi ini dapat dilihat [disini](https://github.com/IanNarsa/ia
 &nbsp;
 Next Article : 
 [Analisis Gempa Bersumber Tweet BMKG](./bmkg/bmkg.html)
----------------------------------->
