@@ -1,18 +1,10 @@
-
+﻿
 # Anlisis #Gempa @infoBMKG
 &nbsp;
 &nbsp;
 
 Pada studi kasus ini kita akan menganalisa mengenai Gempa yang terjadi dari awal tahun 2018 sampai bulan 27 Juli 2020. Data ini bersumber dari akun twitter @infoBMKG yang diambil dengan kata kunci #Gempa. Dalam proses analisis ini kita juga melakukan proses ETL (Extract Transfom Load), ekstrasi data dari twitter kemudian ditransform menjadi format baru sesuai keutuhan lalu disimpan dalam variabel yang telah ditentukan.
 
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import string
-import collections
-```
 
 File gempaInfo.csv dibaca dengan pandas agar dapat ditampilkan dalam bentuk dataframe. File gempaInfo.csv berisi mengenai informasi gempa yang terjadi di Indonesia, semua data ini dicatat oleh BMKG yang kemudian diposting pada twitter @infoBMKG, data ini diambil dengan rentang waktu 01 Januari 2018 sampai dengan 27 Juli 2020.
 
@@ -197,13 +189,6 @@ df.head()
 Dari data frame di atas kita dapat melihat nama-nama kolom dengan perintah ```python df.columns ``` .
 
 
-```python
-df.columns
-```
-
-
-
-
     Index(['id', 'conversation_id', 'created_at', 'date', 'time', 'timezone',
            'user_id', 'username', 'name', 'place', 'tweet', 'mentions', 'urls',
            'photos', 'replies_count', 'retweets_count', 'likes_count', 'hashtags',
@@ -218,29 +203,6 @@ df.columns
  
 Setelah data dapat diekstrak atau dibuka, data yang ada ditransform sesuai dengan kebutuhan analis. Pada tahap ini dipilah lagi tweet yang ada, kita hanya akan mengambil data tanggal pada kolom date, waktu pada kolom time, waktu wilayah pada kolom timezone dan tweet pada kolom tweet, tweet yang diambil hanya tweet yang menginformasikan gempa. Untuk mengetahuinya kita dapat melihat pada tweet apakah ada kalimat '#Gempa Mag:' yang menandakan tweet tersebut menginformasikan kejadian mengenai gempa.
 
-
-```python
-date = []
-time = []
-timezone = []
-text = []
-htags = []
-
-for i in range (len(df["tweet"])):
-    if df["tweet"][i].find("#Gempa Mag:") != (-1):
-        date.append(df["date"][i])
-        time.append(df["time"][i])
-        timezone.append(df["timezone"][i])
-        text.append(df["tweet"][i])
-```
-
-
-```python
-dt = {"Date":date, "Time":time, "Timezone":timezone, "Tweet":text}
-ndf = pd.DataFrame(dt)
-print(ndf.head())
-print(len(ndf))
-```
 
              Date      Time Timezone  \
     0  2020-07-27  08:27:05      WIB   
@@ -264,65 +226,14 @@ Data teks dari kolom tweet kita ambil untuk kita pilah kembali untuk menemukan t
 Selain itu kita juga akan menambah kolom "Area" yang berisi informasi dimana gempa terjadi.
 
 
-```python
-tweets = ndf["Tweet"]
-```
-
-
-```python
-mag = []
-area = []
-for x in range (len(tweets)):
-    tw = ",".join(tweets.values[x].split("(")[1:len(tweets.values[x])]).split("#BMKG")[0].replace(")","")
-    area.append(tw)
-    a = tweets.values[x].split(",")
-    try:
-        a = a[0].split("#Gempa Mag:")[1]
-        a = float(a.split(" ")[0])
-        mag.append(a)
-    except:
-        b = tweets.values[x]
-        b = b.split(",")
-        b = float(b[0].split("#Gempa Mag: ")[1])
-        mag.append(b)
-        continue
-dataMag = np.array(mag)
-dataMag = dataMag.astype(np.float64)
-dataMag.dtype
-
-print(len(dataMag))
-```
-
-    7504
-
-
-
-```python
-dt.keys()
-```
-
-
-
-
     dict_keys(['Date', 'Time', 'Timezone', 'Tweet'])
 
 
-
-
-```python
-ndf["Magnitudo"] = dataMag
-ndf["Area"] = area
-ndf = ndf.drop(columns = "Tweet")
-```
 
 ## Visualisasi dan Analisa
 
 Data yang sudah melalui tahap preprocessing akan menghasilkan seperti tabel di bawah ini. Di sini terdapat 5 kolom yaitu Date, Time, Timezone, Magnitudo dan Area
 
-
-```python
-ndf.head()
-```
 
 
 
@@ -400,22 +311,7 @@ ndf.head()
 
 
 
-```python
-tgl = []
-jumlah = []
-
-counter = collections.Counter(ndf["Date"])
-for x in counter.keys():
-    tgl.append(x)
-for x in counter.values():
-    jumlah.append(x)
-dt = {"Date":tgl, "Total_Tweets":jumlah}
-dfTweet = pd.DataFrame(dt)
-dfTweet = dfTweet.set_index(["Date"])
-dfTweet = dfTweet.sort_index(ascending = True)
-dfTweet.head()
-```
-
+<br>
 
 
 
@@ -472,13 +368,7 @@ dfTweet.head()
 
 
 
-```python
-print("5 Tweet Tertinggi \n")
-print(dfTweet.sort_values(["Total_Tweets"],ascending=False).head(),"\n")
-print("Total hari \t: ",len(dfTweet),"\n")
-print("Banyak Tweet \t: ",dfTweet["Total_Tweets"].sum(),"\n")
-```
-
+<br>
     5 Tweet Tertinggi 
     
                 Total_Tweets
@@ -501,25 +391,9 @@ Selama 858 hari BMKG melakukan tweet sebanyak 7504 tweet mengenai #Gempa, jumlah
 Di bawah merupakan grafik garis frekuensi tweet setiap harinya selama periode Januari 2018 sampai 27 Juli 2020
 
 
-```python
-dfTweet.plot(figsize = (30,10))
-plt.xticks(fontsize = 20)
-plt.xlabel("Dates",fontsize = 20)
-plt.yticks(fontsize = 20)
-plt.legend(fontsize = 20)
-plt.show()
-```
-
-
 ![png](output_20_0.png)
 
 
-
-```python
-print("mean \t:",ndf["Magnitudo"].mean())
-print("media \t:",ndf["Magnitudo"].median())
-print("mode \t:",ndf["Magnitudo"].mode())
-```
 
     mean 	: 4.323960554370998
     media 	: 4.5
@@ -529,15 +403,7 @@ print("mode \t:",ndf["Magnitudo"].mode())
 
 Mencari gempa dengan magnitudo si atas 7 skala richter dengan menseleksi data frame pada kolom Magnitudo
 
-
-```python
-areaMag = ndf[ndf["Magnitudo"]>=7]
-areaMag
-```
-
-
-
-
+<br>
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
