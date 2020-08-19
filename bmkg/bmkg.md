@@ -215,4 +215,4 @@ Previous Article :
 [#dirumahsaja emas naik](/)
 Next Article :
 &nbsp;
-[Customer segmentation](././penjualan/supermarket_sale_analysis.html)
+[Customer segmentation](/penjualan/supermarket_sale_analysis.html)
