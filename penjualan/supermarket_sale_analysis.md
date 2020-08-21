@@ -246,7 +246,7 @@ Melihat kluster 0
 
 
 
-![png](output_32_1.png)
+![png](output_28_1.png)
 
 
 
@@ -289,7 +289,7 @@ Melihat kluster 1
 
 
 
-![png](output_35_1.png)
+![png](output_31_1.png)
 
 
 
@@ -331,7 +331,7 @@ Melihat kluster 2
 
 
 
-![png](output_38_1.png)
+![png](output_34_1.png)
 
 
 
