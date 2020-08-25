@@ -114,13 +114,6 @@ Dari grafik di atas patahan terjadi pada titik 3, sehingga pembagian kluster yan
 
 Scatterplot hasil klustering
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f4ee9b68588>
-
-
-
-
 ![png](output_21_1.png)
 
 
@@ -162,11 +155,8 @@ Jika dilihat dari tabel di atas, kluster 0 memiliki rata - rata pendapatan kotor
 
 
 ### Melihat deskripsi Rating setiap kluster
-
-
-
-
-
+ <br>
+ 
 |  | Rating Kluster 0 | Rating Kluster 1 | Rating Kluster 2 |
 | --- | --- | --- | --- |
 | count | 203.000000 | 392.000000 | 405.000000 |
@@ -187,8 +177,7 @@ Untuk rating setiap kluster dapat dilihat pada tabel di atas. Kluster 0 rata - r
  Sementara untuk rata - rata rating tertinggi yang diberada pada kluster 1 sebesar 8.6 memiliki rata - rata pendapatan kotor 12.28, hal ini jauh di bawah rata - rata pendapatan kluster 0. Yang terakhir kluster 2 dengan rata - rata rating 5.6 dengan rata - rata pendapatan kotor 47.
 
 
-
-    Kluster 0
+### Kluster 0
                             Quantity  gross income  Rating
     Product line                                          
     Electronic accessories       283     1115.3560   198.0
@@ -197,47 +186,10 @@ Untuk rating setiap kluster dapat dilihat pada tabel di atas. Kluster 0 rata - r
     Health and beauty            251     1001.5165   201.0
     Home and lifestyle           319     1290.6620   237.2
     Sports and travel            300     1218.7965   233.2 
-    
-    Kluster 1
-                            Quantity  gross income  Rating
-    Product line                                          
-    Electronic accessories       347      765.0105   557.8
-    Fashion accessories          335      860.7085   603.7
-    Food and beverages           369      898.9445   666.5
-    Health and beauty            333      837.4175   553.2
-    Home and lifestyle           327      724.3400   514.9
-    Sports and travel            299      729.1390   500.7 
-    
-    Kluster 2
-                            Quantity  gross income  Rating
-    Product line                                          
-    Electronic accessories       341      707.1350   421.4
-    Fashion accessories          298      646.0755   440.4
-    Food and beverages           313      679.3940   370.2
-    Health and beauty            270      503.6250   310.3
-    Home and lifestyle           265      549.8510   341.9
-    Sports and travel            321      676.9610   414.2 
-    
 
+ Kita akan melihat lebih dalam informasi setiap kluster. Untuk kluster 0 sendiri pendapatan tertinggi pada produk Home and lifestyle dengan total 1290.6620 disusul Sports and travel sebesar 1218.7965. Pada kluster 0 sendiri konsumen didominasi oleh perempuan dengan jumlah 109 orang dan laki - laki sebanyak 94 orang.
 
-
-
-
-|  | Unit price | Quantity | Tax 5% | Total | cogs | gross margin percentage | gross income | Rating | kluster |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| count | 1000.000 | 1000.000 | 1000.000 | 1000.000 | 1000.000 | 1000.000 | 1000.000 | 1000.000 | 1000.000 |
-| mean | 55.672 | 5.510 | 15.379 | 322.967 | 307.587 | 4.762 | 15.379 | 6.973 | 1.202 |
-| std | 26.495 | 2.923 | 11.709 | 245.885 | 234.177 | 0.000 | 11.709 | 1.719 | 0.754 |
-| min | 10.080 | 1.000 | 0.508 | 10.678 | 10.170 | 4.762 | 0.508 | 4.000 | 0.000 |
-| 25% | 32.875 | 3.000 | 5.925 | 124.422 | 118.497 | 4.762 | 5.925 | 5.500 | 1.000 |
-| 50% | 55.230 | 5.000 | 12.088 | 253.848 | 241.760 | 4.762 | 12.088 | 7.000 | 1.000 |
-| 75% | 77.935 | 8.000 | 22.445 | 471.350 | 448.905 | 4.762 | 22.445 | 8.500 | 2.000 |
-| max | 99.960 | 10.000 | 49.650 | 1042.650 | 993.000 | 4.762 | 49.650 | 10.000 | 2.000 |
-
-
-Melihat kluster 0
-
-
+ 
 
     Gender
     Female    109
@@ -277,21 +229,32 @@ Melihat kluster 0
             Sports and travel         17
     Name: kluster, dtype: int64
 
+ Pada kluster 0 metode pembayaran yang paling diminati oleh perempuan adalah credit card dan produk yang paling diminati adalah Home and lifestyle, yang kedua Food and beverage diikuti Sports and travel, Electronic accessories, Fashion accessories dan yang terakhir Health and beauty. 
+ Untuk laki - laki sendiri metode pembayaran yang diminati adalah cash dan produk yang paling dicari adalah Home and beauty dengan jumlah peminat 18, Fashion accessories, Electronic accessories dan Sports and travel memiliki jumlah peminat sama yaitu sebanyak 17 orang, kemudian Home and lifestyle sebanyak 15 dan yang terakhir Food and beverages sebanyak 10 orang.
 
-Melihat kluster 1
+### Kluster 1
 
+                            Quantity  gross income  Rating
+    Product line                                          
+    Electronic accessories       347      765.0105   557.8
+    Fashion accessories          335      860.7085   603.7
+    Food and beverages           369      898.9445   666.5
+    Health and beauty            333      837.4175   553.2
+    Home and lifestyle           327      724.3400   514.9
+    Sports and travel            299      729.1390   500.7 
 
-
+Dari tabel di atas, produk yang paling laris adalah produk Food and beverage dengan jumlah penjualan 369 dan jumlah penjualan kotor sebesar 898.9 dilanjutkan urutan kedua Electronic accessories sebanyak 347 dengan total pendapatan kotor 765 dan urutan ketiga Fashion accessories dengan jumlah pembelian 335 dengan total pendapatan kotor 860.7, meskipun Fashion accessories menduduki urutan ketiga pada kategori jumlah transaksi tetapi Fashion accessories menempati kedudukan no 2. 
+<br>
+ 
     Gender
     Female    202
     Male      190
     Name: kluster, dtype: int64
 
 
-
 ![png](output_31_1.png)
 
-
+Jika dilihat lebih dalam pada kluster 1 konsumen masih didominasi oleh perempuan dengan jumlah konsumen perempuan sebesar 202 dan jumlah laki - laki yaitu 190, meskipun didominasi perempuan tetapi jumlah laki - laki dan perempuan tidak berbeda jauh.
 
     Kluster 1 dengan pengkelompokan Gender dan Payment
     Gender  Payment    
@@ -302,7 +265,9 @@ Melihat kluster 1
             Credit card    65
             Ewallet        72
     Name: kluster, dtype: int64
-    
+
+Berbeda dengan kluster 0, pada kluster 1 metode pembayaran yang diminati oleh perempuan adalah metode cash dengan jumlah peminat 81 orang, yang kedua credit card sebesar 61 orang dan yang terakhir ewallet sebesar 60. Sementara untuk laki - laki ewallet menjadi metode pembayaran yang diminati dengan jumlah peminat sebesar 72 orang, kedua credit card dengan peminat sebesar 65 orang dan yang terakhir cash sebesar 53.
+
     Kluster 1 dengan pengkelompokan Gender dan Product line
     Gender  Product line          
     Female  Electronic accessories    31
@@ -320,9 +285,18 @@ Melihat kluster 1
     Name: kluster, dtype: int64
 
 
-Melihat kluster 2
-
-
+   ### Kluster 2
+    
+                            Quantity  gross income  Rating
+    Product line                                          
+    Electronic accessories       341      707.1350   421.4
+    Fashion accessories          298      646.0755   440.4
+    Food and beverages           313      679.3940   370.2
+    Health and beauty            270      503.6250   310.3
+    Home and lifestyle           265      549.8510   341.9
+    Sports and travel            321      676.9610   414.2 
+    
+Produk yang menyumbang pemasukan tertinggi pada kluster 2 yaitu Electronic accessories dengan pendapatan kotor sebesar 707 dengan total penjualan sebesar 341, disusul pada urutan kedua Food and beverages dengan pendapatan kotor sebesar 679 dan yang ketiga Sports and travel sebesar 676.
 
     Gender
     Female    190
@@ -332,9 +306,8 @@ Melihat kluster 2
 
 
 ![png](output_34_1.png)
-
-
-
+<br>
+Untuk kluster 2 konsumen didominasi oleh laki - laki dengan jumlah 215 orang dan perempuan 190 orang.
 
     Kluster 2 dengan pengkelompokan Gender dan Payment
     Gender  Payment    
@@ -345,6 +318,8 @@ Melihat kluster 2
             Credit card    55
             Ewallet        82
     Name: kluster, dtype: int64
+<br>
+Metode yang diminati oleh laki - laki adalah ewallet dengan pemminat 82 orang, cash dengan peminat 78 orang dan credit card sebanyak 55 orang. Untuk konsumen perempuan metode pembayaran yang diminati adalah ewallet dengan peminat 67, credit card 62 dan cash 61.
     
     Kluster 2 dengan pengkelompokan Gender dan Product line
     Gender  Product line          
@@ -362,3 +337,7 @@ Melihat kluster 2
             Sports and travel         32
     Name: kluster, dtype: int64
 
+Produk pada kluster 2 yang paling diminat oleh laki - laki adalah Sports and travel dengan jumlah peminat 40, electronic accessories dan fashion accessories dengan peminat 37 orang. Untuk produk yang diminati oleh perempuan adalah fashion accessories dengan besar peminat 40 orang, food and beverages 37 orang dan yang ketiga electronic accessories.
+<br>
+
+Dari hasil pengklusteran di atas dapat disimpulkan bahwa pada kluster 0 konsumen didominasi oleh perempuan dengan produk favorit Home and lifestyle dan membayar dengan metode credit card, berbeda denga laki - laki pada kluster 0 yang lebih memilih metode cash dengan produk favorit mereka health and beauty. Untuk kluster 1
