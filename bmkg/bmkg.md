@@ -213,6 +213,7 @@ Untuk code program dapat dilihat [disini](https://github.com/IanNarsa/iannarsa.g
 Previous Article :
 &nbsp;
 [#dirumahsaja emas naik](/)
+<br>
 Next Article :
 &nbsp;
 [Customer segmentation](/penjualan/supermarket_sale_analysis.html)
