@@ -285,7 +285,7 @@ Berbeda dengan kluster 0, pada kluster 1 metode pembayaran yang diminati oleh pe
     Name: kluster, dtype: int64
 
 
-   ### Kluster 2
+### Kluster 2
     
                             Quantity  gross income  Rating
     Product line                                          
@@ -340,4 +340,4 @@ Metode yang diminati oleh laki - laki adalah ewallet dengan pemminat 82 orang, c
 Produk pada kluster 2 yang paling diminat oleh laki - laki adalah Sports and travel dengan jumlah peminat 40, electronic accessories dan fashion accessories dengan peminat 37 orang. Untuk produk yang diminati oleh perempuan adalah fashion accessories dengan besar peminat 40 orang, food and beverages 37 orang dan yang ketiga electronic accessories.
 <br>
 
-Dari hasil pengklusteran di atas dapat disimpulkan bahwa pada kluster 0 konsumen didominasi oleh perempuan dengan produk favorit Home and lifestyle dan membayar dengan metode credit card, berbeda denga laki - laki pada kluster 0 yang lebih memilih metode cash dengan produk favorit mereka health and beauty. Untuk kluster 1
+Dari hasil pengklusteran di atas dapat disimpulkan bahwa pada kluster 0 konsumen didominasi oleh perempuan dengan produk favorit Home and lifestyle dan membayar dengan metode credit card, berbeda denga laki - laki pada kluster 0 yang lebih memilih metode cash dengan produk favorit mereka health and beauty. Untuk kluster 1 jumlah konsumen laki -laki dan perempuan tidak jauh berbeda tetapi masih lebih banyak perempuan dengan metode pembayaran cash yang paling diminati dan Fashion accessories sebagai produk terlaris. Untuk laki - laki sendiri memilih ewallet sebagai metode pembayaran yang paling diminati dan Health and beauty menjadi produk terlaris di kluster 1. Yang terakhhir kluster 2 jumlah konsumen laki - laki lebih banyak dari perempuan, konsumen laki - laki memilih metode pembayaran ewallet sebagai metode pembayaran yang paling diminat dan untuk produk yang paling diminati adalah fashion accessories. Kemudian perempuan sendiri lebih memilih produk sports and travel dengan metode pembayaran yang paling diminati adalah ewallet.
