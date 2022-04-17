@@ -7,5 +7,5 @@
 	> Dengan memanfaatkan tweet dari @infoBMKG kita dapat melihat wilayah mana saja yang terjadi gempa bumi dan kita dapat membuat dataset kita sendiri
 3.  [**Klustering penjualan supermarket**](https://iannarsa.github.io/penjualan/supermarket_sale_analysis.html)
 	> Supermarket menjadi salah satu tujuan untuk berbelanja yang tetap diminat meski sudah ada di era sekarang online shop. Dari data penjualan supermaket tersbut kita dapat melihat segmentasi pasar, perilaku konsumen dan kita dapat memberikan produk yang tepat.
-4. [**ETL - Extract Transform Laoad**](https://github.com/IanNarsa/iannarsa.github.io/etl/etl-consume-data.html)
+4. [**ETL - Extract Transform Laoad**](https://github.com/IanNarsa/iannarsa.github.io//blob/master/etl/etl-consume-data.html)
     > Contoh penerapan ETL menggunakan library pandas
