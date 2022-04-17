@@ -18,9 +18,8 @@ import pandas as pd #for dataframe
 
 # Scraping Harga Emas
 
-
+### Ekstrak Data
 ```python
-# Ekstrak Data
 startDate = '2015-01-01'
 endDate = '2022-03-20'
 web = req.get('https://pusatdata.kontan.co.id/market/chart_logam_mulia/?startdate='+startDate+'&enddate='+endDate+'&logam=gold')
@@ -33,7 +32,7 @@ Data emas yang kita akan ambil berasal dari https://pusatdata.kontan.co.id denga
 soup = BeautifulSoup(web.content, 'html.parser')
 soup
 ```
-
+output:
 ``` html
 
      <div class="sec-pane">
@@ -177,9 +176,8 @@ Dataframe sudah jadi dan data sudah bisa diload ke csv. Setelah data berhasil di
 
 # Scraping Data Cuaca
 
-
+kita import lib tambahan untuk bagian cuaca ini
 ```python
-# kita import lib tambahan untuk bagian cuaca ini
 import xmltodict # lib ini untuk mengubah xml menjadi dict
 import json # lib ini untuk mengolah json
 ```
@@ -230,8 +228,8 @@ def kamus_cuaca():
 Kita buat fungsi yang di dalamnya memuat kode cuaca, ini kita pakai untuk konversi data dari kode menjadi kalimat yang mudah dibaca oleh *user*
 
 
+### Transfrom
 ```python
-# Transfrom
 dCuaca = kamus_cuaca() # panggil fungsi yang sudah dibuat sebelumnya
 _data = []
 for i in dt['area']:
@@ -259,10 +257,7 @@ for i in dt['area']:
     _data.append(area)
 ```
 
-
-```python
-_data
-```
+output dari _data
 ```json
   _data =  [{'source': 'BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)',
       'id': '501186',
@@ -330,9 +325,8 @@ _data
 ```
 
 
-
+Proses Transform untuk mengelompokan data cuaca setiap Kabupaten kemudian dilihat setiap 6 jam
 ```python
-# Proses Transform untuk mengelompokan data cuaca setiap Kabupaten kemudian dilihat setiap 6 jam
 kabupaten = []
 waktu = []
 cuaca = []
@@ -420,9 +414,8 @@ for d in _data:
     
     
 
-
+Transform ke dalam bentuk dataframe
 ```python
-# Transform ke dalam bentuk dataframe
 dataCuaca = {
     'Kabupaten':kabupaten,
     'Tanggal Update':waktu,
@@ -888,9 +881,8 @@ dfCuaca
 
 
 
-
+Kita coba tampilkan data cuaca semua seluruh kabupaten pada jam 18
 ```python
-# Kita coba tampilkan data cuaca semua seluruh kabupaten pada jam 18
 
 dfCuaca[dfCuaca['Jam']=='18']
 ```
