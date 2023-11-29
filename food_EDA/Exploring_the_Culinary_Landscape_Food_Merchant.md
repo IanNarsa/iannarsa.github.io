@@ -196,10 +196,6 @@ Most order frequencies in 2019
 
 Most order frequencies in 2021
 
-![Most order frequencies in 2023](Exploring%20the%20Culinary%20Landscape%20Food%20Merchant%20Exp%2000dfd7346f6144e383e2033e39b1cd60/Untitled%207.png)
-
-Most order frequencies in 2023
-
 ![Most order frequencies in 2020](Exploring%20the%20Culinary%20Landscape%20Food%20Merchant%20Exp%2000dfd7346f6144e383e2033e39b1cd60/Untitled%208.png)
 
 Most order frequencies in 2020
@@ -207,6 +203,10 @@ Most order frequencies in 2020
 ![Most order frequencies in 2022](Exploring%20the%20Culinary%20Landscape%20Food%20Merchant%20Exp%2000dfd7346f6144e383e2033e39b1cd60/Untitled%209.png)
 
 Most order frequencies in 2022
+
+![Most order frequencies in 2023](Exploring%20the%20Culinary%20Landscape%20Food%20Merchant%20Exp%2000dfd7346f6144e383e2033e39b1cd60/Untitled%207.png)
+
+Most order frequencies in 2023
 
 In the lively streets of Yogyakarta, where student life hums in tune with tradition, a beloved culinary gem steals the spotlight amidst the bustling fast-food scene—Ayam Geprek. This local sensation, born from time-honored recipes and modern tastes, embodies the city's fusion of heritage and fast-food fervour.
 
@@ -228,7 +228,7 @@ Just as Ayam Geprek embodies the fusion of tradition and fast-food innovation, "
 
 ![Image ***********from Unsplash***********](https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb)
 
-Image ***********from Unsplash***********
+Image ***from Unsplash***
 
 > “*Food is the language of love.
 Just like data, taste, texture, and
