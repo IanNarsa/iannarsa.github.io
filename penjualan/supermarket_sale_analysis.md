@@ -90,20 +90,6 @@ Dari grafik di atas patahan terjadi pada titik 3, sehingga pembagian kluster yan
 ## Hasil cluster
 
 
-
-
-|  | Invoice ID | Branch | City | Customer type | Gender | Product line | Unit price | Quantity | Tax 5% | Total | Date | Time | Payment | cogs | gross margin percentage | gross income | Rating | kluster |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 750-67-8428 | A | Yangon | Member | Female | Health and beauty | 74.69 | 7 | 26.1415 | 548.9715 | 2019-01-05 | 13:08 | Ewallet | 522.83 | 4.761905 | 26.1415 | 9.1 | 1 |
-| 1 | 226-31-3081 | C | Naypyitaw | Normal | Female | Electronic accessories | 15.28 | 5 | 3.8200 | 80.2200 | 2019-03-08 | 10:29 | Cash | 76.40 | 4.761905 | 3.8200 | 9.6 | 1 |
-| 2 | 631-41-3108 | A | Yangon | Normal | Male | Home and lifestyle | 46.33 | 7 | 16.2155 | 340.5255 | 2019-03-03 | 13:23 | Credit card | 324.31 | 4.761905 | 16.2155 | 7.4 | 1 |
-| 3 | 123-19-1176 | A | Yangon | Member | Male | Health and beauty | 58.22 | 8 | 23.2880 | 489.0480 | 2019-01-27 | 20:33 | Ewallet | 465.76 | 4.761905 | 23.2880 | 8.4 | 1 |
-| 4 | 373-73-7910 | A | Yangon | Normal | Male | Sports and travel | 86.31 | 7 | 30.2085 | 634.3785 | 2019-02-08 | 10:37 | Ewallet | 604.17 | 4.761905 | 30.2085 | 5.3 | 0 |
-
-
-
-
-
     Index(['Invoice ID', 'Branch', 'City', 'Customer type', 'Gender',
            'Product line', 'Unit price', 'Quantity', 'Tax 5%', 'Total', 'Date',
            'Time', 'Payment', 'cogs', 'gross margin percentage', 'gross income',
