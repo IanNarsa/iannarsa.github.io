@@ -1,0 +1,12 @@
+<section id="projects" class="section fade-in">
+  <h2>Projects</h2>
+  <ul class="projects">
+    {% for post in site.posts %}
+    <li class="project-card">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt }}</p>
+      <a href="{{ post.url }}">Read More →</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
