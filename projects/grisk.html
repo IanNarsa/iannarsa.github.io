@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GRisk | Ian Narsa</title>
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="/style.css" />
   <style>
     /* Tambahan styling untuk memastikan keterbacaan */
     body {
@@ -12,6 +12,14 @@
       color: #c9d1d9; /* teks terang */
       font-family: 'Inter', sans-serif;
       line-height: 1.6;
+    }
+
+    .navbar {
+        background: var(--bg-light);
+        border-bottom: 1px solid var(--border);
+        top: 0;
+        z-index: 10;
+        margin-left: 10%;
     }
 
     h1, h2, h3 {
@@ -68,7 +76,7 @@
   <header class="navbar">
     <div class="container nav-content">
       <h1 class="logo">Ian Narsa</h1>
-      <nav>
+      <nav class="logo">
         <a href="../index.html">Beranda</a>
       </nav>
     </div>
