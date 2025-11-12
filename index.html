@@ -7,55 +7,70 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Ian Narsa</h1>
-    <p>Digital Strategist • Policy Thinker • Tech Visionary</p>
-    <nav>
-      <a href="#about">Tentang</a>
-      <a href="#projects">Proyek</a>
-      <a href="#contact">Kontak</a>
-    </nav>
+  <header class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">Ian Narsa</h1>
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about" class="fade-in">
-    <h2>Tentang Saya</h2>
-    <p>
-      Saya seorang profesional yang bergerak di bidang transformasi digital, intelijen kebijakan, dan inovasi strategis. 
-      Menggabungkan disiplin teknologi, geopolitik, dan etika kepemimpinan untuk membangun sistem yang berdampak luas dan berkelanjutan.
-    </p>
-  </section>
-
-  <section id="projects" class="fade-in">
-    <h2>Proyek Terpilih</h2>
-
-    <div class="project">
-      <h3>🧠 ASEAN Sharia GeoEconomic Risk Engine (GRisk)</h3>
-      <p>Model AI generatif untuk menganalisis risiko geoeconomi berbasis syariah di kawasan ASEAN.</p>
-      <a class="btn" href="projects/grisk.html">Lihat Detail</a>
-    </div>
-
-    <div class="project">
-      <h3>⚙️ The Art of Attacking the Impossible</h3>
-      <p>Teori politik strategis tentang kepemimpinan, keberanian, dan manuver rasional.</p>
-      <a class="btn" href="projects/art-of-impossible.html">Lihat Detail</a>
-    </div>
-
-    <div class="project">
-      <h3>🏛️ Imperium Mandarakarta</h3>
-      <p>Novel politik-filosofis dengan muatan budaya Nusantara dan ideologi Machiavellian.</p>
-      <a class="btn" href="projects/imperium-mandarakarta.html">Lihat Detail</a>
+  <section id="hero">
+    <div class="container">
+      <h2>Digital Strategist • Policy Thinker • Tech Visionary</h2>
+      <p>Menghubungkan dunia kebijakan, teknologi, dan etika kepemimpinan untuk masa depan yang lebih cerdas.</p>
     </div>
   </section>
 
-  <section id="contact" class="fade-in">
-    <h2>Kontak</h2>
-    <p>📧 <a href="mailto:ian.narsa@example.com">ian.narsa@example.com</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/iannarsa" target="_blank">LinkedIn</a></p>
-    <p>📝 Catatan Lapangan: <strong>#AcrossTheStraits</strong></p>
+  <section id="about" class="fade-in section">
+    <div class="container narrow">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya seorang profesional yang bergerak di bidang transformasi digital, intelijen kebijakan, dan inovasi strategis. 
+        Menggabungkan disiplin teknologi, geopolitik, dan etika kepemimpinan untuk membangun sistem yang berdampak luas dan berkelanjutan.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="fade-in section">
+    <div class="container">
+      <h2>Proyek Terpilih</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🧠 GRisk</h3>
+          <p>AI untuk analisis risiko geoeconomi berbasis syariah di kawasan ASEAN.</p>
+          <a class="btn" href="projects/grisk.html">Lihat Detail</a>
+        </div>
+        <div class="card">
+          <h3>⚙️ The Art of Attacking the Impossible</h3>
+          <p>Teori politik strategis tentang kepemimpinan dan keberanian.</p>
+          <a class="btn" href="projects/art-of-impossible.html">Lihat Detail</a>
+        </div>
+        <div class="card">
+          <h3>🏛️ Imperium Mandarakarta</h3>
+          <p>Novel politik-filosofis bertema kekuasaan, cinta, dan moralitas.</p>
+          <a class="btn" href="projects/imperium-mandarakarta.html">Lihat Detail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in section">
+    <div class="container narrow">
+      <h2>Kontak</h2>
+      <p>📧 <a href="mailto:ian.narsa@example.com">ian.narsa@example.com</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/iannarsa" target="_blank">LinkedIn</a></p>
+      <p>📝 Catatan Lapangan: <strong>#AcrossTheStraits</strong></p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Ian Narsa. Dibangun dengan GitHub Pages.</p>
+    <div class="container">
+      <p>© 2025 Ian Narsa — Dibangun dengan GitHub Pages.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
